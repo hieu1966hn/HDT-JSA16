@@ -87,7 +87,7 @@ in ra các số từ 0-> 10
 
 
 
-// do - while 
+// do - while
 // let i = 0;
 // do {
 //   console.log(i); //0,1,2,...10
@@ -110,7 +110,61 @@ in ra các số từ 0-> 10
 - box2: Điều kiện dừng
 - box3: câu lệnh thực hiện sau khi kết thúc vòng lặp
 */
-let i;
-for (i = 0; i <= 10; i = i + 1) {
-  console.log(i); //0,1
-}
+// let i;
+// for (i = 0; i <= 10; i = i + 1) {
+//   console.log(i); //0,1
+// }
+
+
+//////////// khái niệm mảng: lưu trữ mọi kiểu dữ liệu dưới dạng danh sách
+// khai báo mảng: 
+let arr = [];
+// Kiểm tra xem kiểu dữ liệu có phải mảng hay không ta sử dụng: typeof
+// console.log(typeof (arr)); //object: Không sử dụng cách này để kiểm tra mảng
+console.log(
+  Array.isArray(arr) // true: => mảng || false: => không phải mảng
+);
+
+// Khai báo mảng (danh sách) animals có 3 phần tử:
+let animals = ["dog", "cat", "fish"];
+console.log(animals);
+
+////// Phương thức thao tác với mảng: CRUD (Creat, Read, Update, Delete )
+//// C: Create: thêm phần tử vào cuối mảng: push
+// thêm phần tử: "snake" vào cuois mảng và in ra:
+animals.push('snake');
+console.log('Mảng sau khi thêm Snake vào cuối mảng là: ' + animals);
+
+//// Read: Đọc mảng
+console.log(animals);
+
+//// U: Update: Sửa thành phần trong mảng (biết vị trí phần tử muốn sửa)
+animals[0] = 'chicken';
+console.log('Mảng sau khi sửa chicken vào phần tử đầu tiên là: ' + animals);
+
+//// D: Delete: Xóa thành phần trong mảng: (biết vị trí muốn xóa ở đâu); Sử dụng splice để xóa
+/*
+- box1: Chọn vị trí trong mảng
+- box2: Xóa mấy phần tử từ vị trí đã chọn đó
+- box3: thêm mấy phần vào vị trí đã chọn
+*/
+
+// xóa phần tử cat trong mảng
+animals.splice(1, 1);
+console.log('Mảng sau khi xóa Cat là: ' + animals);
+
+
+// bài toán đặt ra: Làm thế nào để các em tìm được vị trí phần tử trong mảng;
+// Sử dụng array.indexOf(...) để tìm kiếm và trả về vị trí của mảng:
+let snakeIndexInAnimals = animals.indexOf('snake')
+console.log("Vị trí của snake trong mảng là: " + snakeIndexInAnimals);
+
+
+///////// Yêu cầu xóa phần tử "snake" và thay thế bằng "anaconda"
+//C1: dùng phép gán
+// animals[snakeIndexInAnimals] = 'anaconda'
+
+
+// C2: Dùng splice
+animals.splice(snakeIndexInAnimals, 1, "anaconda")
+console.log('Mảng sau khi xóa Snake và đổi thành Anaconda là: ' + animals);
