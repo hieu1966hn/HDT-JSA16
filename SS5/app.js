@@ -88,9 +88,29 @@ in ra các số từ 0-> 10
 
 
 // do - while 
-let i = 0;
-do {
-  console.log(i); //0,1,2,...10
-  i = i + 1;
+// let i = 0;
+// do {
+//   console.log(i); //0,1,2,...10
+//   i = i + 1;
+// }
+// while (i <= 10);
+
+
+//// for()
+// C1: viết giống while
+// let i = 0;
+// for (; i <= 10;) {
+//   console.log(i);
+//   i = i + 1
+// }
+
+// C2: Viết gọn hơn while và cho mình có thể biết trước số lần lặp lại
+/*
+- box1: truyền biến vào
+- box2: Điều kiện dừng
+- box3: câu lệnh thực hiện sau khi kết thúc vòng lặp
+*/
+let i;
+for (i = 0; i <= 10; i = i + 1) {
+  console.log(i); //0,1
 }
-while (i <= 10);
