@@ -47,23 +47,41 @@ Kiểm tra toán điểm thí sinh đạt được trong kỳ thi c3 vừa rồi
 - Điểm bằng 0: Không nhận học sinh.
 */
 
-// khai báo biến điểm 
-let diemToan = 7;
+// khai báo biến điểm
+// let diemToan = 2;
 
-if (diemToan > 8) {
-  console.log(`Học sinh đủ điều kiện vào lớp chọn`);
-}
-else if (diemToan > 6.5) {
-  console.log(`Học sinh đủ điều kiện vào lớp khá`);
-}
-else if (diemToan > 5) {
-  console.log(`Học sinh đủ điều kiện vào lớp thường`);
-}
-else if (diemToan == 0) {
-  console.log(`Học sinh không đủ điều kiện vào lớp và phải thi lại`);
-}
-else {
-  console.log("Học sinh đủ điều kiện vào lớp bổ trợ");
-}
+// if (diemToan > 8) {
+//   console.log(`Học sinh đủ điều kiện vào lớp chọn`);
+// }
+// else if (diemToan > 6.5) {
+//   console.log(`Học sinh đủ điều kiện vào lớp khá`);
+// }
+// else if (diemToan > 5) {
+//   console.log(`Học sinh đủ điều kiện vào lớp thường`);
+// }
+// else if (diemToan == 0) {
+//   console.log(`Học sinh không đủ điều kiện vào lớp và phải thi lại`);
+// }
+// else {
+//   console.log("Học sinh đủ điều kiện vào lớp bổ trợ");
+// }
 
+
+
+/////// Vòng lặp trong Javascript: while, do - while, for.
+/*
+in ra các số từ 0-> 10
+*/
+
+//// while
+let i = 0;
+
+// logic: kiểm tra đk  (đúng)-> chạy code bên trong -> về lại kiểm tra đk 
+// Lưu ý: khi nào kiểm tra đk (sai) => thoát khỏi vòng lặp 
+// Điều kiện dừng: dùng để dừng vòng lặp.
+while (i <= 10) {
+
+  console.log(i);
+  i = i + 1;
+}
 
