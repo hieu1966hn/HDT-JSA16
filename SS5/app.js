@@ -74,14 +74,23 @@ in ra các số từ 0-> 10
 */
 
 //// while
-let i = 0;
+// let i = 0;
 
-// logic: kiểm tra đk  (đúng)-> chạy code bên trong -> về lại kiểm tra đk 
-// Lưu ý: khi nào kiểm tra đk (sai) => thoát khỏi vòng lặp 
+// logic: kiểm tra đk  (đúng)-> chạy code bên trong -> về lại kiểm tra đk
+// Lưu ý: khi nào kiểm tra đk (sai) => thoát khỏi vòng lặp
 // Điều kiện dừng: dùng để dừng vòng lặp.
-while (i <= 10) {
+// while (i <= 10) {
 
-  console.log(i);
+//   console.log(i); //0,1,2,...10
+//   i = i + 1;
+// }
+
+
+
+// do - while 
+let i = 0;
+do {
+  console.log(i); //0,1,2,...10
   i = i + 1;
 }
-
+while (i <= 10);
