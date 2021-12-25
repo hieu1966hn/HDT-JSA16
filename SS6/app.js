@@ -33,4 +33,7 @@ localStorage.NTH
 console.log(localStorage.NTH);
 
 
+///// Xóa LocalStorage
+localStorage.removeItem("NTH")
+
 
