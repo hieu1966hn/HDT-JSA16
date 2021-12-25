@@ -168,3 +168,4 @@ console.log("Vị trí của snake trong mảng là: " + snakeIndexInAnimals);
 // C2: Dùng splice
 animals.splice(snakeIndexInAnimals, 1, "anaconda")
 console.log('Mảng sau khi xóa Snake và đổi thành Anaconda là: ' + animals);
+
