@@ -19,8 +19,18 @@ localStorage.test = "Lưu trữ thành công với cách 2"
 // VD: từ khóa NTH: giá trị đi kèm là: Teacher of HDT-JSA16
 localStorage.NTH = "Teacher of HDT-JSA16"
 
+// VD: lưu trữ CMTND
+localStorage.setItem("123457689", "Nguyễn Trung Hiếu, số tiền gửi là: 100 tỷ đồng, Quê quán HN, Nghề Nghiệp, Giám Đốc MindX");
+
 
 ////// Sử dụng Local Storage
 // C1:
-localStorage.getItem("NTH");
-console.log(localStorage.getItem("NTH"));// 
+localStorage.getItem("123457689");
+console.log(localStorage.getItem("123457689"));// 
+
+// C2:
+localStorage.NTH
+console.log(localStorage.NTH);
+
+
+
