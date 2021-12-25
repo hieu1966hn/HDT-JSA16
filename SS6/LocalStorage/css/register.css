@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0.5rem 2em;
+  margin-right: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.container {
+  width: max-content;
+  margin: auto;
+  margin-top: 20vh;
+
+  font-weight: bold;
+  background-color: #fff;
+  padding: 3em 5em;
+}
+
+.row {
+  padding: 1em 0;
+}
+
+.row label {
+  width: 70px;
+  display: inline-block;
+}
+
+.row input {
+  width: 300px;
+  padding: 0.5rem;
+}
+
+.link_to_show {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.row a {
+  text-transform: uppercase;
+  display: block;
+  width: fit-content;
+  padding: 0.5em 1em;
+  background-color: lightgray;
+
+}
+
+.row a:hover {
+  background-color: gray;
+  color: #fff;
+}
+
+/* Style tiep cho show.html */
