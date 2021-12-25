@@ -66,3 +66,31 @@ button {
 }
 
 /* Style tiep cho show.html */
+
+table {
+  border: 1px solid black;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+
+  width: 200px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.btn a {
+  padding: 0.5em 1em;
+  display: inline-block;
+  background-color: lightgray;
+}
+
+.btn a:hover {
+  background-color: gray;
+  color: #fff;
+}
