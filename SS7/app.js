@@ -24,7 +24,7 @@ const Pi = 3.14;
   let x = "hello";
   {
     let x = "world";
-    console.log("inner block, x = " + x); // world: 
+    console.log("inner block, x = " + x); // world:
 
     var y = "Hello world";
   }
@@ -33,6 +33,28 @@ const Pi = 3.14;
   console.log(y); //
 }
 
+//// 3. Arrrow function (ham mui ten)
 
+// VD: hàm cơ bản: In ra Hello World;
+//C1
+function helloWorld() {
+  alert("Hello World");
+}
 
-// In ra gì
+// helloWorld();// cú pháp gọi hàm
+
+// Trong ES6:
+//C2:
+const helloWorld1 = function () {
+  alert("Hello World");
+};
+// helloWorld();
+// C3: Arrow function (nên dùng)
+let cong1 = (a) => a + 1; // KHai báo hàm cong1. Nó rất gọn.
+console.log(cong1(3)); // ?
+
+//  Viết lại dưới dạng hàm thường
+let cong2 = (a) => {
+  return a + 1;
+};
+console.log(cong2(5)); // => 6
