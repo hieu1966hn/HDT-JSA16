@@ -58,3 +58,7 @@ let cong2 = (a) => {
   return a + 1;
 };
 console.log(cong2(5)); // => 6
+
+// VD: 
+[1,2,3,4,5,6].forEach(a=> console.log(a + " => " + a*a)); // Bình phương của từng số trong mảng
+// 1,4,9,16
