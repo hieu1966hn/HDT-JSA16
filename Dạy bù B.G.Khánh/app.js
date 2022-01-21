@@ -47,5 +47,11 @@ else if (input === "u") {
   let tenMonUpdate = prompt("Mời người dùng nhập tên món muốn update").trim().toLowerCase()
   let viTriMonUpdate = menu.indexOf(tenMonUpdate); // vị trí thứ 1 trong mảng
   menu[viTriMonUpdate] = prompt("Mời người dùng nhập tên mới mới để update");
-
+  console.log(menu);
+}
+else if (input === "d") {
+  let tenMonDelete = prompt("Mời người dùng nhập tên món muốn Delete").trim().toLowerCase()
+  let viTriMonDelete = menu.indexOf(tenMonDelete); // vị trí thứ 1 trong mảng
+  menu.splice(viTriMonDelete, 1)
+  console.log(menu);
 }
