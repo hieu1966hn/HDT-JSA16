@@ -74,10 +74,15 @@
 
 //// 5. Các tham số còn lại
 
-let X = function(a,b, ...args){
+let X = function (a, b, ...args) {
     console.log(`a = ${a}, b = ${b}, ${args.length} args left`); // Truyền biến trong chuỗi.
+    console.log(args);
 }
 
-X(2,3);
-X(2,3,4,5);
+X(2, 3);
+X(2, 3, 4, 5);
+X(2, 3, 4, 5, 6, 7, 8, 9, 10);
 
+
+const Pi = 3.14;
+Pi = 2;
