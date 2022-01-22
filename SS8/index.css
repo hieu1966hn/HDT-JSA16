@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* Ép kiểu trang web */
+
+.container {
+  color: #fff;
+  background: linear-gradient(145deg, #1193b0, #6dd5ed);
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
