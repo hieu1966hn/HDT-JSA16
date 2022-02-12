@@ -1,4 +1,5 @@
-const APP_ID = '651daf0af47eb49a9b65a0007afcce53'
+const APP_ID = '651daf0af47eb49a9b65a0007afcce53';
+const DEFAULT_VALUE = "_ _"
 
 const searchInput = document.getElementById("search-input");
 
@@ -27,8 +28,8 @@ searchInput.addEventListener("change", (event) => {
       const data = await response.json();
 
       console.log(data);
-      cityName.innerHTML = data.name;
-      weatherState.innerHTML = data.weather[0].description
+      cityName.innerHTML = data.name || DEFAULT_VALUE;
+      weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
       weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
       temperature.innerHTML = Math.round(data.main.temp);
 
