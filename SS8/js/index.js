@@ -29,8 +29,8 @@ searchInput.addEventListener("change", (event) => {
       console.log(data);
       cityName.innerHTML = data.name;
       weatherState.innerHTML = data.weather[0].description
-
-
+      weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+      temperature.innerHTML = Math.round(data.main.temp);
 
     })
   // .then(data => console.log(data));
