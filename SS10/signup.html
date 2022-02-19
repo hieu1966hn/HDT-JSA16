@@ -15,7 +15,7 @@
   <!-- Giao diện  Sign_Up -->
   <div class="container">
 
-    <form>
+    <form id="sign-in">
       <div class="row header">
         <h2>Sign Up</h2>
       </div>
@@ -25,22 +25,22 @@
       </div>
 
       <div class="row row_email">
-        <input type="email" id="email" placeholder="Email" oninvalid="prompt();" required>
+        <input type="email" name="email" id="email" placeholder="Email" oninvalid="prompt();" required>
       </div>
 
       <div class="row row_password">
-        <input type="password" id="password" placeholder="Password" oninvalid="prompt();" required>
+        <input name="password" type="password" id="password" placeholder="Password" oninvalid="prompt();" required>
       </div>
 
       <div class="row">
-        <button type="submit" onclick="submitData()" id="submit">Sign Up</button>
+        <button type="submit" id="submit">Sign Up</button>
       </div>
 
       <p class="AskingUser">Already have an account? <a href="#">Sign In</a> now</p>
     </form>
 
 
-
+    <script src="./js/signUp.js"></script>
   </div>
 
 </body>
